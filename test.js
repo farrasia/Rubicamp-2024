@@ -1,7 +1,9 @@
-const { readFileSync, readFile } = require('node:fs');
 
-const result = readFileSync('isi.txt', 'utf-8');
+const array = [2, 2, 3, 4];
+let integer = 0;
 
-readFile()
+for (let i = 0; i < array.length; i++) {
+  integer = integer * 10 + array[i];
+}
 
-console.log(result);
+console.log(integer); // Outputs: 1234
