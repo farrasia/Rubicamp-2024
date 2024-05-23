@@ -1,9 +1,9 @@
-
-const array = [2, 2, 3, 4];
-let integer = 0;
-
-for (let i = 0; i < array.length; i++) {
-  integer = integer * 10 + array[i];
+function factorial (n){
+    if(n==0){
+        return 1
+    } else{
+        return n * factorial(n-1);
+    }
 }
 
-console.log(integer); // Outputs: 1234
+console.log(factorial(4))
