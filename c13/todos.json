@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "content": "saya mau belanja",
+    "completed": false,
+    "tags": [],
+    "createdAt": 1718252317625
+  },
+  {
+    "id": 2,
+    "content": "saya mau belajar",
+    "completed": true,
+    "tags": [],
+    "createdAt": 1719242638522
+  },
+  {
+    "id": 3,
+    "content": "saya mau makan",
+    "completed": false,
+    "tags": [],
+    "createdAt": 1719242653556
+  },
+  {
+    "id": 4,
+    "content": "saya mau tidur",
+    "completed": true,
+    "tags": [],
+    "createdAt": 1719242775684
+  }
+]

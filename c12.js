@@ -27,6 +27,7 @@ let questionsSkipped = [];
 function askCurrentQuestion(){
     if(currentQuestionIndex < daftarPertanyaan.length){
         if(benar){
+            wrongAnswers = 0;
             console.log('Pertanyaan: ' + daftarPertanyaan[currentQuestionIndex].definition);
         }
         rl.prompt();

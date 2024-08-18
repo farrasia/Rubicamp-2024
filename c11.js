@@ -29,7 +29,7 @@ function askCurrentQuestion(){
 askCurrentQuestion();
 rl.on('line', function(line) {
     const currentQuestion = daftarPertanyaan[currentQuestionIndex];
-    if(line == currentQuestion.term){
+    if(line.toLowerCase() == currentQuestion.term.toLowerCase()){
         console.log("Selamat Anda Benar!\n");
         benar= true;
         currentQuestionIndex++;

@@ -38,7 +38,7 @@ function completeTodo (id){
 }
 
 function uncompleteTodo (id){
-    const todo = todo.find(todo => todo.id ==id)
+    const todo = todos.find(todo => todo.id ==id)
     if(todo){
         todo.completed = false
         saveTodos()
@@ -49,9 +49,9 @@ function uncompleteTodo (id){
 function listTodos (filter, order){
     let filteredTodos = todos
 
-    if(filter === 'completed'){
+    if(filter === 'list:completed'){
         filteredTodos = todos.filter(todo => todo.completed)
-    } else if (filter === "outstanding"){
+    } else if (filter === "list:outstanding"){
         filteredTodos = todos.filter(todo =>!todo.completed)
     }
 
